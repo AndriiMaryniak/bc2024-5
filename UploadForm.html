@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завантажити нотатку</title>
+</head>
+<body>
+    <h1>Завантажити нотатку</h1>
+    <form action="/write" method="POST" enctype="multipart/form-data">
+        <label for="note_name">Ім'я нотатки:</label>
+        <input type="text" id="note_name" name="note_name" required><br><br>
+        
+        <label for="note">Текст нотатки:</label><br>
+        <textarea id="note" name="note" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Завантажити">
+    </form>
+</body>
+</html>
